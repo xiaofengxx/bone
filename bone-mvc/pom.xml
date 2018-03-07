@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bone-core</artifactId>
-    <description>框架核心，包括基础环境/核心工具（底层工具）/资源加载等</description>
+    <artifactId>bone-mvc</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>site.zido.bone</groupId>
-            <artifactId>bone-logger</artifactId>
+            <artifactId>bone-core</artifactId>
             <version>0.0.1</version>
         </dependency>
     </dependencies>

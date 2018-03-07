@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
 
-    <bean id="three" class="site.zido.test.Three">
+    <bean id="three" class="site.zido.bone.xml.Three">
         <property name="one" ref="one"/>
         <property name="two" ref="two"/>
     </bean>
 
-    <bean id="two" class="site.zido.test.Two">
+    <bean id="two" class="site.zido.bone.xml.Two">
         <property name="render" value="打人"/>
         <property name="one" ref="one"/>
     </bean>
 
-    <bean id="one" class="site.zido.test.One">
+    <bean id="one" class="site.zido.bone.xml.One">
         <construction>
             <property type="java.lang.Integer" value="123"/>
         </construction>
         <property name="name" value="zhangsan"/>
         <property name="age" value="1"/>
-        <!--<property name="two" ref="two"/> 这里加上会有循环依赖问题（已解决，正常报错）-->
+        <!--<defProperty name="two" ref="two"/> 这里加上会有循环依赖问题（已解决，正常报错）-->
     </bean>
 </beans>
